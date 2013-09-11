@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/editTextLongDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="7dp"
+        android:text="Long Description" >
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="99"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+		<Button
+		    android:layout_weight="33"
+		    android:layout_height="40dp"
+		    android:layout_width = "fill_parent"
+		    android:text="View Map"
+		    android:textSize="10dp"
+		    android:id="@+id/mapButton"/>
+		<Button
+		    android:layout_weight="33"
+		    android:layout_height="40dp"
+		    android:layout_width="fill_parent"
+		    android:text="Edit Item"
+		    android:textSize="10dp"
+		    android:id="@+id/editItem"/>
+		<Button
+		    android:layout_weight="33"
+		    android:layout_height="40dp"
+		    android:layout_width="fill_parent"
+		    android:text="Delete Item"
+		    android:textSize="10dp"
+		    android:id="@+id/deleteItem"/>
+    </LinearLayout>
+
+</LinearLayout>

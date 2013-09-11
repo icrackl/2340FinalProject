@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ViewSwitcher
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/filterViewSwitcher">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="100" >
+
+            <ExpandableListView
+                android:id="@+id/itemListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="15" >
+            </ExpandableListView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/eShortDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="25"
+                    android:hint="Short Description"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/bAddItem"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="60"
+                    android:text="Add"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Filter by"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textSize="30dp" />
+
+                    <Button
+                        android:id="@+id/bNoFilter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Show All"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2" >
+
+                        <Button
+                            android:id="@+id/bCompletedFilter"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Completed"
+                            android:textSize="20dp" />
+
+                        <Button
+                            android:id="@+id/bUnCompletedFilter"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Not Completed"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/bCategoryFilter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:textSize="20dp" />
+
+                    <Spinner
+                        android:id="@+id/filterSpinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/bDateFilter"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textSize="20dp" />
+
+                    <DatePicker
+                        android:id="@+id/filterDatePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TimePicker
+                        android:id="@+id/filterTimePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ViewSwitcher>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">Item Manager</string>
+    <string name="name_errorMSG">Invalid Format. \neg: John King</string>
+    <string name="username_errorMSG">Invalid Format:\nmust contains at least one uppercase\ncontains at least one numberncharacter length from 4-16\neg. John5</string>
+    <string name="password_errorMSG">Invalid Format:\nmust contains at least one uppercase\ncontains at least one numberncharacter length from 4-16\neg. Pass5</string>
+    <string name="confirmedpw_errorMSG">Password Does Not Match! </string>
+    <string name="email_errorMSG">Invalid Email. eg john@gatech.edu</string>
+
+</resources>

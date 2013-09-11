@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textSize="10dp" />
+
+    <LinearLayout
+        android:id="@+id/linearViewRows"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/tvItemDescript"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="25"
+            android:text="Cheese"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="38"
+            android:text="Boop"
+            android:textSize="10dp"/>"
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="37"
+            android:text="booop"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</LinearLayout>
